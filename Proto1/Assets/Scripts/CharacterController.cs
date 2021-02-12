@@ -41,21 +41,25 @@ public class CharacterController : MonoBehaviour
 
 	}
 
-	#endregion
+    private void FixedUpdate()
+    {
+		rb.velocity = transform.forward * speed;
+	}
+    #endregion
 
 
-	#region Private Methods
-
-
-
-	#endregion
-
-
-	#region Public Methods
+    #region Private Methods
 
 
 
-	#endregion
+    #endregion
+
+
+    #region Public Methods
+
+
+
+    #endregion
 
 
 }
